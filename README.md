@@ -15,7 +15,8 @@ p.setup = () => {
 }
 
 p.draw = () => {
-  p.background('PapayaWhip')
+  p.background('black')
+  obj.draw()
 }
 ```
 
@@ -30,8 +31,6 @@ export default class MyObject {
   }
 
   draw() {
-    p.noStroke()
-    p.fill('blue')
     p.circle(this.x, this.y, 100)
   }
 }
